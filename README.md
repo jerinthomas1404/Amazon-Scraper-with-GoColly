@@ -40,6 +40,9 @@ Application that consists of 2 services - Scraper and Aggregator, and MongoDB as
 2. ``` docker-compose build ```
 3. ``` docker-compose up -d ```
 4. Using POSTMAN/Other Application send a POST request to scraper API with a url in the body as JSON.
+5.  Sample URLs: 
+	- ``` https://www.amazon.com/Controller-Compatible-Programming-Vibration-PlayStation-4/dp/B08L7T1VC7/ref=sr_1_2_sspa?th=1 ```
+	
 
 ## Screenshots
 ![Overview](./assests/images/docker-compose-build.png)
