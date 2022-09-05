@@ -2,7 +2,8 @@
 
 Application that consists of 2 services - Scraper and Aggregator, and MongoDB as the document store. 
 
-![Overview](./assests/images/drawio.png)
+![Project Overview](./assests/images/drawio.png)
+
 ## Objective
 >**Note**: Below services are containerized into two different images.
 
