@@ -155,7 +155,7 @@ func postFunc(w http.ResponseWriter, r *http.Request) {
 	/*
 		Sending the scraped data to aggregator service
 	*/
-	aggregatorURL := "http://backend:8081/aggregator"
+	aggregatorURL := "http://aggregator:8081/aggregator"
 	aggreq, err := http.NewRequest("POST", aggregatorURL, bytes.NewBuffer(productDetails))
 	if err != nil {
 		log.Fatal(err)
