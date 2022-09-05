@@ -10,6 +10,6 @@ WORKDIR "$APP_HOME"
 
 COPY . .
 RUN go mod download
-RUN go build -o /scraperAPI
+RUN go build -o scraperAPI
 EXPOSE 8080
 CMD ["./scraperAPI"]
