@@ -10,6 +10,6 @@ WORKDIR "$APP_HOME"
 
 COPY . .
 RUN go mod download
-RUN go build -o /aggregatorAPI
+RUN go build -o aggregatorAPI
 EXPOSE 8081
 CMD ["./aggregatorAPI"]
