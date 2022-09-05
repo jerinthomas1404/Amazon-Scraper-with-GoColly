@@ -135,9 +135,12 @@ func scraper(url string) OuterDocument {
 	return outerDoc
 }
 
-func getFunc(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Do a POST request to the API")
-}
+/*
+The below handler was created for POC purpose.
+*/
+// func getFunc(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "Do a POST request to the API")
+// }
 
 func postFunc(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
@@ -188,7 +191,7 @@ func postFunc(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/scraper", getFunc).Methods("GET")
+	// router.HandleFunc("/scraper", getFunc).Methods("GET")
 	router.HandleFunc("/scraper", postFunc).Methods("POST")
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
