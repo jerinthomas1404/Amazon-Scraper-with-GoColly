@@ -48,4 +48,6 @@ Application that consists of 2 services - Scraper and Aggregator, and MongoDB as
 
 ![Overview](./assests/images/docker-desktop-wsl-integration.png)
 
+![Overview](./assests/images/POSTREQ_SCRAPER.png)
+
 ![Overview](./assests/images/GETREQ_AGGREGATOR.png)
